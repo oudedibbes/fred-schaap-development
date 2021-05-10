@@ -20,9 +20,6 @@
   .btn {
     @apply inline-block px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;
   }
-  .btn-primary {
-    @apply bg-schaap-700 text-white hover:bg-schaap-100 focus:ring-schaap-500 focus:ring-opacity-50 active:bg-schaap-600;
-  }
 }
 
 @layer utilities {
