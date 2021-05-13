@@ -3,18 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+  }
   body {
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
   }
-
-  html {
-    height: -webkit-fill-available;
-  }
 }
 
-@layer utilities {}
+@layer utilities {
+}
 
 @layer components {
   .btn {
@@ -23,24 +24,28 @@
 }
 
 @layer utilities {
-  .custom-shape-divider-top-1620308849 {
+  .custom-shape-divider-top {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-}
+  }
 
-.custom-shape-divider-top-1620308849 svg {
+  .custom-shape-divider-top svg {
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
     height: 200px;
-}
+  }
 
-.custom-shape-divider-top-1620308849 .shape-fill {
-  --tw-bg-opacity: 1;
+  .custom-shape-divider-top .shape-fill {
+    --tw-bg-opacity: 1;
     fill: rgba(243, 244, 246, var(--tw-bg-opacity));
-}
+  }
+
+  .tags {
+    @apply flex-initial mr-1 mb-1 text-base font-roboto leading-tight px-3 py-1 bg-schaap-800 text-gray-100 rounded-md;
+  }
 }
