@@ -1,7 +1,7 @@
 module.exports = {
-  purge: {
-    content: ["./index.html"],
-  },
+  purge: [
+    "./index.html"
+  ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
@@ -36,5 +36,7 @@ module.exports = {
       backgroundColor: ["active"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
