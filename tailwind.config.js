@@ -1,8 +1,6 @@
 module.exports = {
-  purge: [
-    "./index.html"
-  ],
-  darkMode: 'media', // or 'media' or 'class'
+  purge: ["./index.html"],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -11,23 +9,23 @@ module.exports = {
           DEFAULT: "#55B748",
           dark: "#55B748",
         },
-        'schaap': {
-          DEFAULT: '#55B748',
-          '50': '#EEF8ED',
-          '100': '#DDF1DA',
-          '200': '#BBE2B6',
-          '300': '#99D491',
-          '400': '#77C56D',
-          '500': '#55B748',
-          '600': '#44923A',
-          '700': '#336E2B',
-          '800': '#22491D',
-          '900': '#11250E'
+        schaap: {
+          DEFAULT: "#55B748",
+          50: "#EEF8ED",
+          100: "#DDF1DA",
+          200: "#BBE2B6",
+          300: "#99D491",
+          400: "#77C56D",
+          500: "#55B748",
+          600: "#44923A",
+          700: "#336E2B",
+          800: "#22491D",
+          900: "#11250E",
         },
       },
       fontFamily: {
-        roboto: ['Roboto Slab', 'serif'],
-        poppins: ['Poppins', 'sans-serif']
+        roboto: ["Roboto Slab", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
@@ -36,7 +34,5 @@ module.exports = {
       backgroundColor: ["active"],
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };

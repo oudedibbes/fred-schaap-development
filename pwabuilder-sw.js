@@ -3,7 +3,7 @@
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
-  "./index.html"
+  "./index.html",
 ];
 
 self.addEventListener("install", function (event) {
@@ -55,7 +55,9 @@ self.addEventListener("fetch", function (event) {
             return response;
           })
           .catch(function (error) {
-            console.log("[PWA Builder] Network request failed and no cache." + error);
+            console.log(
+              "[PWA Builder] Network request failed and no cache." + error
+            );
           });
       }
     )
